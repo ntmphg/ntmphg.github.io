@@ -1,14 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Phuong's Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phuong | Competitive Programming & Algorithms</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--bg) 0%, #edf2ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.25rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    li {
+      border-left: 3px solid var(--accent);
+      padding-left: 0.8rem;
+    }
+
+    li p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .placeholder {
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      color: var(--muted);
+      background: #f9fafb;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello 👋 I'm Phuong</h1>
-  <p>This is my personal website.</p>
+  <main class="container">
+    <section class="card hero">
+      <h1>Hello 👋 I'm Phuong</h1>
+      <p>
+        Computer Science student passionate about competitive programming,
+        algorithms, and problem solving.
+      </p>
+      <div class="tags">
+        <span class="tag">Competitive Programming</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Data Structures</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I have years of experience solving algorithmic problems, participating in
+        coding contests, and continuously sharpening my problem-solving mindset.
+        I enjoy building efficient solutions and learning advanced algorithmic
+        techniques.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>[Add your role / activity here]</strong>
+          <p>[Example: Mentor for a university programming club, 2023 - Present]</p>
+        </li>
+        <li>
+          <strong>[Add another experience]</strong>
+          <p>[Example: Participant in ICPC regional training camps]</p>
+        </li>
+      </ul>
+      <div class="placeholder" style="margin-top: 1rem;">
+        ➕ You can replace these placeholders with internships, projects,
+        leadership roles, or competition-related activities.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Awards & Achievements</h2>
+      <ul>
+        <li>
+          <strong>[Add your award]</strong>
+          <p>[Example: Top 5 in National Collegiate Programming Contest 2024]</p>
+        </li>
+        <li>
+          <strong>[Add another award]</strong>
+          <p>[Example: Candidate Master on Codeforces]</p>
+        </li>
+      </ul>
+      <div class="placeholder" style="margin-top: 1rem;">
+        🏆 Use this section to highlight contest rankings, medals, online judge
+        ratings, and scholarships.
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Phuong — Built with HTML & CSS
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 67172d2bb62a66990582178c2bd9ef488558edb0
