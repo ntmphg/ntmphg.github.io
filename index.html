@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Phuong's Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuong | CS Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello 👋 I'm Phuong</h1>
-  <p>This is my personal website.</p>
+  <main class="container">
+    <section class="hero">
+      <article class="card hero-card">
+        <h2 class="name-title">Nguyen Thi Minh Phuong</h2>
+        <p class="email-line">Email: phuongminh2201hp@gmail.com</p>
+        <p>
+          <strong>Competitive Programming</strong> | <strong>AI</strong> | <strong>Cybersecurity</strong>
+        </p>
+        <div class="profile-links">
+          <a class="icon-link" href="https://www.linkedin.com/in/thi-minh-phuong-nguyen-b63109384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 8.5H3.56V20h3.38V8.5Zm.22-3.56c0-1.02-.8-1.84-1.92-1.84-1.1 0-1.9.82-1.9 1.84 0 1 .78 1.84 1.88 1.84h.02c1.12 0 1.92-.84 1.92-1.84ZM20.44 13.41c0-3.5-1.86-5.13-4.34-5.13-2 0-2.88 1.1-3.38 1.88V8.5H9.34c.04 1.1 0 11.5 0 11.5h3.38v-6.43c0-.34.02-.68.12-.92.28-.68.92-1.38 2-1.38 1.42 0 2 1.08 2 2.66V20h3.38v-6.59Z"></path>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="icon-link" href="cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Zm0 2.5L16.5 7H14V4.5ZM8 12h8v1.5H8V12Zm0 3h8v1.5H8V15Zm0-6h4v1.5H8V9Z"></path>
+            </svg>
+            <span>CV</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Experience </h2>
+        <div class="award-list">
+          <div class="award-item">
+            <img src="AI.png" alt="Certificate image for award 1">
+            <div>
+              <h3>[Cohost AI Hackathon]</h3>
+              <p>[Bronze Medal], [2022]</p>
+              <p class="section-note">
+                Developing a computer vision model to classify whether a player executed a ball strike correctly<br><br>
+                Built and trained a Convolutional Neural Network (CNN) using PyTorch for image classification<br><br>
+                Designed a preprocessing pipeline including frame extraction, normalization, and data augmentation to improve generalization.
+              </p>
+            </div>
+          </div>
+
+          <div class="award-item">
+            <img src="2048.png" alt="Game optimization">
+            <div>
+              <h3>[AXIE Game Optimization Contest]</h3>
+              <p>[Bronze Medal], [2022]</p>
+              <p class="section-note">Developed an automated algorithm for the game 2048 <br><br>
+
+                Implemented an Expectimax search algorithm with Q-learning for optimized scoring<br><br>
+                
+                Designed and tuned heuristics including tile weighting, monotonicity, smoothness, and empty-tile prioritization<br><br>
+                
+                Optimized search depth and performance to maximize long-term score under computational constraints</p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 67172d2bb62a66990582178c2bd9ef488558edb0
